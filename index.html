@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <title>Rádio Comunitária 87 FM - Guaxupé/MG</title>
+  
+  <link rel="manifest" href="manifest.json" />
+  <meta name="theme-color" content="#0d47a1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <meta name="apple-mobile-web-app-title" content="87 FM" />
+  <link rel="apple-touch-icon" href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgGDssoBTjTSWhYl7Xq8d4cYOtLsNq8uNQE2HckDCleKXiV7_8xnz75gei-P9pbCPmc5IH0V7oADMM9pOlF74k4y5vJzBI2RjNB3OkBBreRtpKsz3mOfqjqCDSElv23PFAB7JqocEubrjtD/s1600-r/notasenoticias.jpg" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- TOPO DO APP -->
+  <header class="app-header">
+    <div class="logo-area">
+      <span class="live-pill">AO VIVO</span>
+      <h1>87.9 FM</h1>
+    </div>
+    <button id="btnInstall" class="install-btn" style="display: none;">Instalar App</button>
+  </header>
+
+  <!-- PLAYER PRINCIPAL -->
+  <main class="player-card">
+    <div class="disc-cover">
+      <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgGDssoBTjTSWhYl7Xq8d4cYOtLsNq8uNQE2HckDCleKXiV7_8xnz75gei-P9pbCPmc5IH0V7oADMM9pOlF74k4y5vJzBI2RjNB3OkBBreRtpKsz3mOfqjqCDSElv23PFAB7JqocEubrjtD/s1600-r/notasenoticias.jpg" alt="87 FM Guaxupé" id="appLogoImg" />
+      <div class="sound-wave" id="soundWave">
+        <span></span><span></span><span></span><span></span>
+      </div>
+    </div>
+
+    <div class="track-info">
+      <h2 id="stationTitle">Rádio 87 FM</h2>
+      <p id="songTitle">Sintonizando áudio ao vivo...</p>
+    </div>
+
+    <!-- CONTROLES -->
+    <div class="controls-area">
+      <button id="btnPlayPause" class="play-btn" aria-label="Tocar ou Pausar">
+        <svg id="playIcon" viewBox="0 0 24 24" width="36" height="36" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+        <svg id="pauseIcon" viewBox="0 0 24 24" width="36" height="36" fill="currentColor" style="display: none;"><path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z"/></svg>
+      </button>
+    </div>
+
+    <div class="volume-slider-wrap">
+      <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M3 9v6h4l5 5V4L7 9H3z"/></svg>
+      <input type="range" id="volumeControl" min="0" max="1" step="0.05" value="1" />
+      <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"/></svg>
+    </div>
+
+    <audio id="radioAudio" preload="none">
+      <source src="https://live.paineldj.com.br/proxy/87fmmg?mp=/stream" type="audio/aac" />
+    </audio>
+  </main>
+
+  <!-- ABAS E RECURSOS -->
+  <section class="action-grid">
+    <a href="https://wa.me/553535526038" target="_blank" class="action-item whatsapp">
+      <span class="icon">&#128172;</span>
+      <strong>WhatsApp</strong>
+      <small>Pedir Música</small>
+    </a>
+
+    <a href="https://www.youtube.com/@87fmguaxupe." target="_blank" class="action-item youtube">
+      <span class="icon">&#9654;</span>
+      <strong>YouTube</strong>
+      <small>Estúdio Ao Vivo</small>
+    </a>
+
+    <a href="https://www.instagram.com/87fmguaxupe/" target="_blank" class="action-item instagram">
+      <span class="icon">&#128247;</span>
+      <strong>Instagram</strong>
+      <small>@87fmguaxupe</small>
+    </a>
+
+    <button id="btnCopyPix" class="action-item pix">
+      <span class="icon">&#128176;</span>
+      <strong>Apoiar via PIX</strong>
+      <small id="pixFeedback">Copiar Chave</small>
+    </button>
+  </section>
+
+  <footer class="app-footer">
+    <p>Associação Pró Cidadania de Guaxupé/MG[cite: 3]</p>
+    <small>Rua Capitão João Machado, 199 - Centro</small>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
