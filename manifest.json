@@ -1,0 +1,22 @@
+{
+  "name": "Rádio Comunitária 87 FM Guaxupé",
+  "short_name": "87 FM",
+  "description": "Aplicativo oficial da Rádio Comunitária 87 FM de Guaxupé/MG",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#090d16",
+  "theme_color": "#0d47a1",
+  "orientation": "portrait",
+  "icons": [
+    {
+      "src": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgGDssoBTjTSWhYl7Xq8d4cYOtLsNq8uNQE2HckDCleKXiV7_8xnz75gei-P9pbCPmc5IH0V7oADMM9pOlF74k4y5vJzBI2RjNB3OkBBreRtpKsz3mOfqjqCDSElv23PFAB7JqocEubrjtD/s1600-r/notasenoticias.jpg",
+      "sizes": "192x192",
+      "type": "image/jpeg"
+    },
+    {
+      "src": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgGDssoBTjTSWhYl7Xq8d4cYOtLsNq8uNQE2HckDCleKXiV7_8xnz75gei-P9pbCPmc5IH0V7oADMM9pOlF74k4y5vJzBI2RjNB3OkBBreRtpKsz3mOfqjqCDSElv23PFAB7JqocEubrjtD/s1600-r/notasenoticias.jpg",
+      "sizes": "512x512",
+      "type": "image/jpeg"
+    }
+  ]
+}
